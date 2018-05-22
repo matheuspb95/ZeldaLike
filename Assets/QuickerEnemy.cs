@@ -14,7 +14,7 @@ public class QuickerEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		if(Mathf.Abs(body.velocity.x) != Mathf.Abs(body.velocity.y)){
-			print("Error");
+			//print("Error");
 			body.velocity = new Vector2(Mathf.Sign(body.velocity.x) * velocity, 
 										Mathf.Sign(body.velocity.y) * velocity);
 		}		
